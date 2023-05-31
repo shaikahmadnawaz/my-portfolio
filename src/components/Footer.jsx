@@ -6,9 +6,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-center items-center">
           <p className="text-white text-sm">
-            Made with{" "}
-            <span role="img" aria-label="heart" className="text-white">
-              &#x2661;
+            Made with 🤍{" "}
             </span>{" "}
             by{" "}
             <a
