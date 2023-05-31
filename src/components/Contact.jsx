@@ -14,29 +14,32 @@ const Contact = () => {
       const message = e.target.message.value;
 
       // Make a POST request to the backend endpoint
-      const response = await axios.post("http://localhost:5000/api/contact", {
-        name,
-        email,
-        message,
-      });
+      const response = await axios.post(
+        "https://shaikahmadnawaz.cyclic.app/api/contact",
+        {
+          name,
+          email,
+          message,
+        }
+      );
 
       // Handle the response
       if (response.data.success) {
         // Display a success toast message
-        toast.success("Message sent to Nawaz!", { autoClose: 3000 });
+        toast.success("Message sent to Nawaz!", { autoClose: 1500 });
         // Display a success message or perform any desired action
         console.log("Message sent successfully!");
         // Clear the input fields
         e.target.reset();
       } else {
         // Display an error toast message
-        toast.error("Error sending message");
+        toast.error("Error sending message", { autoClose: 1500 });
         // Display an error message or handle the error
         console.log("Error sending message");
       }
     } catch (error) {
       // Display an error toast message
-      toast.error("Error sending message");
+      toast.error("Error sending message", { autoClose: 1500 });
       // Display an error message or handle the error
       console.error("Error sending message:", error);
     }
