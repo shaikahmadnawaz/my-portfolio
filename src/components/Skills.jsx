@@ -1,10 +1,9 @@
 import React from "react";
 import { DiReact, DiNodejs, DiDocker } from "react-icons/di";
-import { SiMongodb, SiExpress, SiAmazonaws } from "react-icons/si";
 
 const Skills = () => {
   return (
-    <div className="bg-white py-10">
+    <div id="#skills" className="bg-white py-10">
       <div className="max-w-7xl text-center mx-auto px-8">
         <h1 className="text-3xl font-bold mb-4">Skills</h1>
         <p className="text-lg text-gray-700 mb-8">
