@@ -1,17 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    try {
-      // Get the form data
-      const name = e.target.name.value;
-      const email = e.target.email.value;
-      const message = e.target.message.value;
+    if (!e.target.checkValidity()) {
+      e.target.reportValidity();
+      return;
+    }
 
+    try {
       // Make a POST request to the backend endpoint
       const response = await axios.post(
         "https://shaikahmadnawaz.cyclic.app/api/contact",
@@ -28,14 +32,16 @@ const Contact = () => {
         // Display a success message or perform any desired action
         console.log("Message sent successfully!");
         // Clear the input fields
-        e.target.reset();
+        setName("");
+        setEmail("");
+        setMessage("");
       } else {
-        toast.error("Error in sending message");
+        toast.error("Error sending message");
         // Display an error message or handle the error
         console.log("Error sending message");
       }
     } catch (error) {
-      toast.error("Error in sending message");
+      toast.error("Error sending message");
       // Display an error message or handle the error
       console.error("Error sending message:", error);
     }
@@ -79,6 +85,9 @@ const Contact = () => {
                   type="text"
                   id="name"
                   name="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
                   className="w-full border-black border-2 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500 p-2"
                   placeholder="Your Name"
                 />
@@ -94,6 +103,10 @@ const Contact = () => {
                   type="email"
                   id="email"
                   name="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                  pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
                   className="w-full border-black border-2 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500 p-2"
                   placeholder="Your Email"
                 />
@@ -110,6 +123,9 @@ const Contact = () => {
                 id="message"
                 name="message"
                 rows="4"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                required
                 className="w-full border-black border-2 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500 p-2"
                 placeholder="Your Message"
               ></textarea>

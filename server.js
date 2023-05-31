@@ -18,9 +18,24 @@ mongoose.connect(process.env.MONGODB_URI, {
 
 // Create a schema for the message
 const messageSchema = new mongoose.Schema({
-  name: String,
-  email: String,
-  message: String,
+  name: {
+    type: String,
+    required: [true, "Name is required"],
+  },
+  email: {
+    type: String,
+    required: [true, "Email is required"],
+    validate: {
+      validator: function (email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      },
+      message: "Invalid email address",
+    },
+  },
+  message: {
+    type: String,
+    required: [true, "Message is required"],
+  },
 });
 
 // Create a model based on the schema
