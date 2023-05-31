@@ -5,10 +5,9 @@ const Hero = () => {
   return (
     <div id="#home" className="relative w-full bg-white">
       <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
-        <div className="flex flex-col justify-center px-4 py-12 md:py-16 lg:col-span-7 lg:gap-x-6 lg:px-6 lg:py-24 xl:col-span-6">
-          <h1 className="mt-8 text-3xl tracking-tight text-black md:text-4xl lg:text-6xl">
-            Hi there,
-            <br />I am{" "}
+        <div className="flex flex-col justify-center px-4 py-12 md:py-16 lg:col-span-7 lg:px-6 lg:py-24 xl:col-span-6">
+          <h1 className="mt-8 text-4xl tracking-tight text-black lg:text-6xl">
+            Hi there, <br />I am{" "}
             <span className="inline-block text-black font-bold">Nawaz</span>
           </h1>
 
@@ -17,23 +16,35 @@ const Hero = () => {
           </p>
 
           <div className="mt-8 flex space-x-4">
-            <a href="https://www.linkedin.com/your-linkedin-profile">
+            <a
+              href="https://www.linkedin.com/your-linkedin-profile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaLinkedin
                 className="text-black hover:text-gray-600"
                 size={24}
               />
             </a>
-            <a href="https://github.com/your-github-profile">
+            <a
+              href="https://github.com/your-github-profile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaGithub className="text-black hover:text-gray-600" size={24} />
             </a>
-            <a href="https://twitter.com/your-twitter-profile">
+            <a
+              href="https://twitter.com/your-twitter-profile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaTwitter className="text-black hover:text-gray-600" size={24} />
             </a>
           </div>
         </div>
-        <div className="relative lg:col-span-5 lg:-mr-8 xl:col-span-6">
+        <div className="relative flex justify-end lg:col-span-5 lg:pr-8 xl:col-span-6">
           <img
-            className="aspect-[3/2] object-cover lg:aspect-[4/3] lg:h-[700px] xl:aspect-[16/9]"
+            className="object-cover w-full h-72 md:h-96 lg:h-auto lg:w-auto xl:h-auto xl:w-full"
             src="me.svg"
             alt="my-image"
           />

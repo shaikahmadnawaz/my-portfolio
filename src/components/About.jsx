@@ -26,12 +26,12 @@ const About = () => {
               designing and developing scalable and efficient solutions that
               adhere to industry best practices.
             </p>
-            <p className="text-lg mb-4">
+            {/* <p className="text-lg mb-4">
               Currently, I am expanding my skill set and exploring the field of
               DevOps. I am enthusiastic about incorporating DevOps practices to
               streamline the software development lifecycle and improve
               deployment processes.
-            </p>
+            </p> */}
             <p className="text-lg mb-4">
               In addition to my technical skills, I am a strong collaborator and
               enjoy working in agile teams. I value continuous learning and stay
