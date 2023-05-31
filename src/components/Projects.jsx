@@ -90,7 +90,6 @@ function Projects() {
                   ))}
                 </div>
                 <a
-                  type="button"
                   className="w-full rounded-sm text-center bg-black text-sm font-semibold text-white px-2 py-1.5 shadow-sm hover:bg-black/80 focus:outline-none focus:ring-2 focus:ring-black"
                   href={project.url}
                   target="_blank"

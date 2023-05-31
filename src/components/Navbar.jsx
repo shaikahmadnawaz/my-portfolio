@@ -12,10 +12,6 @@ const menuItems = [
     href: "#about",
   },
   {
-    name: "Education",
-    href: "#",
-  },
-  {
     name: "Projects",
     href: "#projects",
   },
@@ -29,7 +25,7 @@ const menuItems = [
   },
   {
     name: "Skills",
-    href: "#",
+    href: "#skills",
   },
   {
     name: "Contact",
