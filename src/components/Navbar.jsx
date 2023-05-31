@@ -13,7 +13,7 @@ const menuItems = [
   },
   {
     name: "Education",
-    href: "#about",
+    href: "#",
   },
   {
     name: "Projects",
@@ -33,7 +33,7 @@ const menuItems = [
   },
   {
     name: "Contact",
-    href: "#",
+    href: "#contact",
   },
 ];
 
