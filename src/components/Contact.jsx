@@ -1,7 +1,6 @@
 import React from "react";
 import axios from "axios";
-import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import toast from "react-hot-toast";
 
 const Contact = () => {
   const handleSubmit = async (e) => {
@@ -25,21 +24,18 @@ const Contact = () => {
 
       // Handle the response
       if (response.data.success) {
-        // Display a success toast message
-        toast.success("Message sent to Nawaz!", { autoClose: 1500 });
+        toast.success("Message sent to Nawaz!");
         // Display a success message or perform any desired action
         console.log("Message sent successfully!");
         // Clear the input fields
         e.target.reset();
       } else {
-        // Display an error toast message
-        toast.error("Error sending message", { autoClose: 1500 });
+        toast.error("Error in sending message");
         // Display an error message or handle the error
         console.log("Error sending message");
       }
     } catch (error) {
-      // Display an error toast message
-      toast.error("Error sending message", { autoClose: 1500 });
+      toast.error("Error in sending message");
       // Display an error message or handle the error
       console.error("Error sending message:", error);
     }
