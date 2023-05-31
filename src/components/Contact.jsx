@@ -1,6 +1,49 @@
 import React from "react";
+import axios from "axios";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      // Get the form data
+      const name = e.target.name.value;
+      const email = e.target.email.value;
+      const message = e.target.message.value;
+
+      // Make a POST request to the backend endpoint
+      const response = await axios.post(
+        "https://shaikahmadnawaz.cyclic.app/api/contact",
+        {
+          name,
+          email,
+          message,
+        }
+      );
+
+      // Handle the response
+      if (response.data.success) {
+        // Display a success toast message
+        toast.success("Message sent to Nawaz!", { autoClose: 1500 });
+        // Display a success message or perform any desired action
+        console.log("Message sent successfully!");
+        // Clear the input fields
+        e.target.reset();
+      } else {
+        // Display an error toast message
+        toast.error("Error sending message", { autoClose: 1500 });
+        // Display an error message or handle the error
+        console.log("Error sending message");
+      }
+    } catch (error) {
+      // Display an error toast message
+      toast.error("Error sending message", { autoClose: 1500 });
+      // Display an error message or handle the error
+      console.error("Error sending message:", error);
+    }
+  };
   return (
     <div id="#contact" className="relative bg-white py-10">
       <div className="max-w-7xl mx-auto px-8 flex flex-col lg:flex-row">
@@ -27,7 +70,7 @@ const Contact = () => {
               <p className="text-gray-600">+91 95029 90520</p>
             </div>
           </div>
-          <form className="mt-8">
+          <form className="mt-8" onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label
