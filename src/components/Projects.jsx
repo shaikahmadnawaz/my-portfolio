@@ -60,7 +60,7 @@ const projects = [
 
 function Projects() {
   return (
-    <div id="#projects" className="relative w-full bg-white">
+    <div id="#projects" className="relative w-full py-10 bg-white">
       <div className="mx-auto max-w-7xl lg:flex lg:flex-col lg:items-center lg:gap-x-8 lg:px-8">
         <h1 className="text-3xl font-bold mb-4">Projects</h1>
         <p className="text-lg text-gray-600 mb-8">

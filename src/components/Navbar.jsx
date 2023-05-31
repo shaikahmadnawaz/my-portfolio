@@ -21,7 +21,7 @@ const menuItems = [
   },
   {
     name: "Experience",
-    href: "#about",
+    href: "#experience",
   },
   {
     name: "Blogs",
