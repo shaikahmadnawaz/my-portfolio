@@ -19,21 +19,15 @@ const Hero = () => {
           <div className="mt-8 flex space-x-4">
             <a href="https://www.linkedin.com/your-linkedin-profile">
               <FaLinkedin
-                className="text-gray-500 hover:text-gray-700"
+                className="text-black hover:text-gray-600"
                 size={24}
               />
             </a>
             <a href="https://github.com/your-github-profile">
-              <FaGithub
-                className="text-gray-500 hover:text-gray-700"
-                size={24}
-              />
+              <FaGithub className="text-black hover:text-gray-600" size={24} />
             </a>
             <a href="https://twitter.com/your-twitter-profile">
-              <FaTwitter
-                className="text-gray-500 hover:text-gray-700"
-                size={24}
-              />
+              <FaTwitter className="text-black hover:text-gray-600" size={24} />
             </a>
           </div>
         </div>
@@ -41,7 +35,7 @@ const Hero = () => {
           <img
             className="aspect-[3/2] object-cover lg:aspect-[4/3] lg:h-[700px] xl:aspect-[16/9]"
             src="me.svg"
-            alt=""
+            alt="my-image"
           />
         </div>
       </div>
