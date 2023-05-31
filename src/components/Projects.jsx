@@ -61,14 +61,14 @@ const projects = [
 function Projects() {
   return (
     <div id="#projects" className="relative w-full py-10 bg-white">
-      <div className="mx-auto max-w-7xl lg:flex lg:flex-col lg:items-center lg:gap-x-8 lg:px-8">
-        <h1 className="text-3xl font-bold mb-4">Projects</h1>
-        <p className="text-lg text-gray-600 mb-8">
+      <div className="mx-auto max-w-7xl px-8">
+        <h1 className="text-3xl font-bold mb-4 md:text-center">Projects</h1>
+        <p className="text-lg text-gray-600 mb-8 md:text-center">
           Explore my featured projects below.
         </p>
         <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
-            <div key={index} className="rounded-md border">
+            <div key={index} className="rounded-md overflow-hidden border">
               <img
                 src={project.imageUrl}
                 alt="Project"
@@ -83,19 +83,20 @@ function Projects() {
                   {project.tags.map((tag, index) => (
                     <span
                       key={index}
-                      className="inline-block bg-gray-100 px-3 py-1 mr-2 mb-2 text-[10px] font-semibold text-gray-900 rounded-full"
+                      className="inline-block bg-gray-100 px-3 py-1 mr-2 mb-2 text-xs font-semibold text-gray-900 rounded-full"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
                 <a
-                  className="w-full rounded-sm text-center bg-black text-sm font-semibold text-white px-2 py-1.5 shadow-sm hover:bg-black/80 focus:outline-none focus:ring-2 focus:ring-black"
+                  className="w-full rounded-sm text-center bg-black text-xs font-semibold text-white px-2 py-1.5 shadow-sm hover:bg-black/80 focus:outline-none focus:ring-2 focus:ring-black"
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  View Project
+                  View Project{" "}
+                  <ArrowUpRight className="inline-block ml-1" size={12} />
                 </a>
               </div>
             </div>

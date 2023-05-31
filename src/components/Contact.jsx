@@ -11,7 +11,7 @@ const Contact = () => {
             alt="contact-illustration"
           />
         </div>
-        <div className="lg:w-1/2 pl-8">
+        <div className="lg:w-1/2 md:pl-8">
           <h1 className="text-3xl font-bold mb-4">Contact Me</h1>
           <p className="text-lg mb-8">
             If you'd like to get in touch with me, feel free to reach out using
@@ -40,7 +40,7 @@ const Contact = () => {
                   type="text"
                   id="name"
                   name="name"
-                  className="w-full border-black border-2 rounded-md focus:ring-slate-500 focus:border-slate-500 p-2"
+                  className="w-full border-black border-2 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500 p-2"
                   placeholder="Your Name"
                 />
               </div>
@@ -55,7 +55,7 @@ const Contact = () => {
                   type="email"
                   id="email"
                   name="email"
-                  className="w-full border-2 border-black rounded-md focus:ring-slate-500 focus:border-slate-500 p-2"
+                  className="w-full border-black border-2 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500 p-2"
                   placeholder="Your Email"
                 />
               </div>
@@ -71,7 +71,7 @@ const Contact = () => {
                 id="message"
                 name="message"
                 rows="4"
-                className="w-full border-2 border-black rounded-md focus:ring-slate-500 focus:border-slate-500 p-2"
+                className="w-full border-black border-2 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500 p-2"
                 placeholder="Your Message"
               ></textarea>
             </div>

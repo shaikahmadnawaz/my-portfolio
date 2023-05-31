@@ -27,7 +27,6 @@ const Blogs = () => {
         const { data } = response.data;
         if (data && data.user && data.user.publication) {
           const { posts } = data.user.publication;
-          console.log(posts);
           setBlogs(posts);
         }
       } catch (error) {
@@ -40,9 +39,9 @@ const Blogs = () => {
 
   return (
     <div id="#blogs" className="relative w-full py-10 bg-white">
-      <div className="mx-auto max-w-7xl lg:flex lg:flex-col lg:items-center lg:gap-x-8 lg:px-8">
-        <h1 className="text-3xl font-bold mb-4">Blogs</h1>
-        <p className="text-lg text-gray-600 mb-8">
+      <div className="mx-auto max-w-7xl px-8">
+        <h1 className="text-3xl font-bold mb-4 md:text-center">Blogs</h1>
+        <p className="text-lg text-gray-600 mb-8 md:text-center">
           Exploring the world of technology through my insightful and
           informative articles.
         </p>
@@ -52,7 +51,7 @@ const Blogs = () => {
               <img
                 src={blog.coverImage}
                 alt={blog.title}
-                className="mb-4 rounded-t-md object-cover h-48 w-full"
+                className="h-48 w-full object-cover rounded-t-md"
               />
               <div className="p-4">
                 <h2 className="text-xl font-semibold mb-2">{blog.title}</h2>
@@ -62,7 +61,7 @@ const Blogs = () => {
                     href={`https://shaikahmadnawaz.hashnode.dev/${blog.slug}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                    className="mt-4 w-full rounded-sm bg-black text-sm font-semibold text-white px-2 py-1.5 shadow-sm hover:bg-black/80 focus:outline-none focus-visible:ring-2 focus-visible:ring-black"
                   >
                     Read More
                   </a>

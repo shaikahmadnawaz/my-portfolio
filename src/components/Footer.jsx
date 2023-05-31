@@ -6,7 +6,11 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-center items-center">
           <p className="text-white text-sm">
-            Made with <span className="text-white">&#x2661;</span> by{" "}
+            Made with{" "}
+            <span role="img" aria-label="heart" className="text-white">
+              &#x2661;
+            </span>{" "}
+            by{" "}
             <a
               href="https://www.linkedin.com/in/shaik-ahmad-nawaz-894425239/"
               target="_blank"

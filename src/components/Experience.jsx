@@ -22,9 +22,9 @@ function Experience() {
 
   return (
     <div id="#experience" className="relative w-full py-10 bg-white">
-      <div className="mx-auto max-w-7xl lg:flex lg:flex-col lg:items-center lg:gap-x-8 lg:px-8">
-        <h1 className="text-3xl font-bold mb-4">Experience</h1>
-        <p className="text-lg text-gray-600 mb-8">
+      <div className="mx-auto max-w-7xl px-8">
+        <h1 className="text-3xl font-bold mb-4 md:text-center">Experience</h1>
+        <p className="text-lg text-gray-600 mb-8 md:text-center">
           Check out my professional experience below.
         </p>
         <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
