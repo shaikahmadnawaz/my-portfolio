@@ -17,7 +17,7 @@ const Hero = () => {
 
           <div className="mt-8 flex space-x-4">
             <a
-              href="https://www.linkedin.com/your-linkedin-profile"
+              href="https://www.linkedin.com/in/shaik-ahmad-nawaz-894425239/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -27,14 +27,14 @@ const Hero = () => {
               />
             </a>
             <a
-              href="https://github.com/your-github-profile"
+              href="https://github.com/shaikahmadnawaz"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaGithub className="text-black hover:text-gray-600" size={24} />
             </a>
             <a
-              href="https://twitter.com/your-twitter-profile"
+              href="https://twitter.com/shaikahmadnawaz"
               target="_blank"
               rel="noopener noreferrer"
             >
