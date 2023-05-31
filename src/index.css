@@ -7,3 +7,13 @@ body {
   color: black;
   font-family: "Poppins", sans-serif;
 }
+
+.toast-container .Toastify__toast--success {
+  background-color: black;
+  color: white;
+}
+
+.toast-container .Toastify__toast--error {
+  background-color: black;
+  color: white;
+}
