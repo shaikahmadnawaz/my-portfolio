@@ -1,5 +1,11 @@
 import React from "react";
-import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaGithub,
+  FaTwitter,
+  FaInstagram,
+  FaDiscord,
+} from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -41,6 +47,23 @@ const Hero = () => {
               rel="noopener noreferrer"
             >
               <FaTwitter className="text-black hover:text-gray-600" size={24} />
+            </a>
+            <a
+              href="https://www.instagram.com/shaikahmadnawaz/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram
+                className="text-black hover:text-gray-600"
+                size={24}
+              />
+            </a>
+            <a
+              href="https://discordapp.com/users/sanawaz#0270"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaDiscord className="text-black hover:text-gray-600" size={24} />
             </a>
           </div>
         </div>
