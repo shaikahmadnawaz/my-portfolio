@@ -7,14 +7,14 @@ function Experience() {
       company: "Atoms Group",
       duration: "March 2023 - Present",
       description:
-        "Vivamus dictum leo id turpis efficitur auctor. Sed vel ipsum lectus. Quisque convallis auctor mi, ac ultrices ipsum luctus ac. Nullam eget tellus eget lacus aliquam feugiat.",
+        "Experienced MERN stack web developer specializing in efficient and scalable web applications. Passionate about delivering high-quality code and creating seamless user experiences. Collaborating with a talented team at Atoms Group to bring innovative solutions to life. Let's turn your ideas into reality with cutting-edge technology.",
     },
     {
       title: "Open Source Contributor",
       company: "GirlScript Summer of Code",
       duration: "May 2023 - Present",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquet purus at mauris dictum, sit amet maximus dolor sollicitudin. Ut consequat, turpis vel lacinia pulvinar, massa mauris facilisis est, id efficitur quam lacus a dolor.",
+        "Passionate open source contributor actively participating in GirlScript Summer of Code. Contributing to meaningful projects and collaborating with a diverse community to solve real-world challenges. Dedicated to enhancing coding skills, fostering innovation, and making a positive impact in the tech industry.",
     },
 
     // Add more experiences here
