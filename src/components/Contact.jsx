@@ -28,7 +28,9 @@ const Contact = () => {
 
       // Handle the response
       if (response.data.success) {
-        toast.success("Message sent to Nawaz!");
+        toast.success("Message sent to Nawaz!", {
+          duration: 1000,
+        });
         // Display a success message or perform any desired action
         console.log("Message sent successfully!");
         // Clear the input fields
@@ -36,12 +38,16 @@ const Contact = () => {
         setEmail("");
         setMessage("");
       } else {
-        toast.error("Error sending message");
+        toast.error("Error sending message", {
+          duration: 1000,
+        });
         // Display an error message or handle the error
         console.log("Error sending message");
       }
     } catch (error) {
-      toast.error("Error sending message");
+      toast.error("Error sending message", {
+        duration: 1000,
+      });
       // Display an error message or handle the error
       console.error("Error sending message:", error);
     }
