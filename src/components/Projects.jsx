@@ -53,7 +53,14 @@ const projects = [
     imageUrl: "my-portfolio.png",
     description:
       "Developed my personal portfolio website using ReactJS and Tailwind CSS. Showcased my projects, skills, and experience. Implemented responsive design and optimized performance for a seamless user experience.",
-    tags: ["#React", "#Tailwind CSS", "#GitHub", "#Vercel"],
+    tags: [
+      "#React",
+      "#Tailwind CSS",
+      "#Node.js",
+      "#Express.js",
+      "#MongoDB",
+      "#Mongoose",
+    ],
     url: "https://github.com/shaikahmadnawaz/my-portfolio",
   },
 ];
