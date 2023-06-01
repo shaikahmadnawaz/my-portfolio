@@ -4,7 +4,7 @@ import { DiReact, DiNodejs, DiDocker } from "react-icons/di";
 const Skills = () => {
   return (
     <div id="#skills" className="bg-white py-10">
-      <div className="max-w-7xl mx-auto px-8">
+      <div className="max-w-7xl text-center mx-auto px-8">
         <h1 className="text-3xl font-bold mb-4 text-center">Skills</h1>
         <p className="text-lg text-gray-700 mb-8 text-center">
           Building exceptional digital experiences with the power of MERN stack

@@ -9,8 +9,8 @@ import {
 
 const Hero = () => {
   return (
-    <div id="#home" className="relative w-full bg-white">
-      <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
+    <div id="#home" className="relative w-full bg-white py-10">
+      <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 px-8">
         <div className="flex flex-col justify-center px-4 py-12 md:py-16 lg:col-span-7 lg:px-6 lg:py-24 xl:col-span-6">
           <h1 className="mt-8 text-4xl tracking-tight text-black lg:text-6xl">
             Hi there, I am{" "}

@@ -88,7 +88,7 @@ const Contact = () => {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
-                  className="w-full border-black border-2 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500 p-2"
+                  className="w-full border-black border-2 rounded-md focus:ring-2 focus:ring-slate-700 focus:border-slate-700 p-2"
                   placeholder="Your Name"
                 />
               </div>
@@ -107,7 +107,7 @@ const Contact = () => {
                   onChange={(e) => setEmail(e.target.value)}
                   required
                   pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
-                  className="w-full border-black border-2 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500 p-2"
+                  className="w-full border-black border-2 rounded-md focus:ring-2 focus:ring-slate-700 focus:border-slate-700 p-2"
                   placeholder="Your Email"
                 />
               </div>
@@ -126,14 +126,14 @@ const Contact = () => {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 required
-                className="w-full border-black border-2 rounded-md focus:ring-2 focus:ring-slate-500 focus:border-slate-500 p-2"
+                className="w-full border-black border-2 rounded-md focus:ring-2 focus:ring-slate-700 focus:border-slate-700 p-2"
                 placeholder="Your Message"
               ></textarea>
             </div>
             <div className="mt-6">
               <button
                 type="submit"
-                className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-black hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500"
+                className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-black hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-700"
               >
                 Send Message
               </button>
