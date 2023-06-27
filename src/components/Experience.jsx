@@ -3,8 +3,8 @@ import React from "react";
 function Experience() {
   const experiences = [
     {
-      title: "Web Developer",
-      company: "Atoms Group",
+      title: "Web Development Intern",
+      company: "Atoms Digital Solutions",
       duration: "March 2023 - Present",
       description:
         "Experienced MERN stack web developer specializing in efficient and scalable web applications. Passionate about delivering high-quality code and creating seamless user experiences. Collaborating with a talented team at Atoms Group to bring innovative solutions to life. Let's turn your ideas into reality with cutting-edge technology.",
