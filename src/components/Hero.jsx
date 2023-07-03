@@ -24,7 +24,7 @@ const Hero = () => {
 
           <div className="mt-8 flex space-x-4">
             <a
-              href="https://www.linkedin.com/in/shaik-ahmad-nawaz-894425239/"
+              href="https://www.linkedin.com/in/shaikahmadnawaz"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -48,7 +48,7 @@ const Hero = () => {
               <FaTwitter className="text-black hover:text-gray-800" size={24} />
             </a>
             <a
-              href="https://www.instagram.com/shaikahmadnawaz/"
+              href="https://www.instagram.com/shaikahmadnawaz"
               target="_blank"
               rel="noopener noreferrer"
             >

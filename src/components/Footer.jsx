@@ -8,7 +8,7 @@ const Footer = () => {
           <p className="text-white text-sm">
             Made with 🤍 by{" "}
             <a
-              href="https://www.linkedin.com/in/shaik-ahmad-nawaz-894425239/"
+              href="https://www.linkedin.com/in/shaikahmadnawaz"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white font-bold hover:underline"
