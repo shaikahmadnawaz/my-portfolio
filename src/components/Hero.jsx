@@ -1,4 +1,3 @@
-import React from "react";
 import {
   FaLinkedin,
   FaGithub,
@@ -30,7 +29,7 @@ const Hero = () => {
               rel="noopener noreferrer"
             >
               <FaLinkedin
-                className="text-black hover:text-gray-600"
+                className="text-black hover:text-gray-800"
                 size={24}
               />
             </a>
@@ -39,14 +38,14 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub className="text-black hover:text-gray-600" size={24} />
+              <FaGithub className="text-black hover:text-gray-800" size={24} />
             </a>
             <a
               href="https://twitter.com/shaikahmadnawaz"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaTwitter className="text-black hover:text-gray-600" size={24} />
+              <FaTwitter className="text-black hover:text-gray-800" size={24} />
             </a>
             <a
               href="https://www.instagram.com/shaikahmadnawaz/"
@@ -54,7 +53,7 @@ const Hero = () => {
               rel="noopener noreferrer"
             >
               <FaInstagram
-                className="text-black hover:text-gray-600"
+                className="text-black hover:text-gray-800"
                 size={24}
               />
             </a>
@@ -63,7 +62,7 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaDiscord className="text-black hover:text-gray-600" size={24} />
+              <FaDiscord className="text-black hover:text-gray-800" size={24} />
             </a>
           </div>
         </div>

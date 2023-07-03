@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import { ArrowUpRight } from "lucide-react";
 
@@ -47,7 +47,7 @@ const Blogs = () => {
         </p>
         <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {blogs.map((blog) => (
-            <div key={blog.slug} className="rounded-md border">
+            <div key={blog.slug} className="rounded-md border border-black">
               <img
                 src={blog.coverImage}
                 alt={blog.title}
@@ -63,7 +63,8 @@ const Blogs = () => {
                     rel="noopener noreferrer"
                     className="mt-4 w-full rounded-sm bg-black text-sm font-semibold text-white px-2 py-1.5 shadow-sm hover:bg-black/80 focus:outline-none focus-visible:ring-2 focus-visible:ring-black"
                   >
-                    Read More
+                    Read More{" "}
+                    <ArrowUpRight className="inline-block ml-1" size={12} />
                   </a>
                 </div>
               </div>

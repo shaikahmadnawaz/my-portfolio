@@ -2,6 +2,23 @@ import { ArrowUpRight } from "lucide-react";
 
 const projects = [
   {
+    title: "Book Talks",
+    imageUrl: "booktalks.png",
+    description:
+      "Developed a feature-rich book talks application using the MERN stack, allowing users to add reviews and ratings to books, enhancing community engagement and providing valuable insights.",
+    tags: [
+      "#React",
+      "#Tailwind CSS",
+      "#Node.js",
+      "#Express.js",
+      "#MongoDB",
+      "#AWS S3",
+      "#REST API",
+      "#JWT",
+    ],
+    url: "https://github.com/shaikahmadnawaz/book-talks",
+  },
+  {
     title: "Workout Tracker",
     imageUrl: "workout-tracker.png",
     description:
@@ -75,7 +92,10 @@ function Projects() {
         </p>
         <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
-            <div key={index} className="rounded-md overflow-hidden border">
+            <div
+              key={index}
+              className="rounded-md overflow-hidden border border-black"
+            >
               <img
                 src={project.imageUrl}
                 alt="Project"

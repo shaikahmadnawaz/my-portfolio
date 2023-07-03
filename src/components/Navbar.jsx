@@ -43,7 +43,7 @@ const Navbar = () => {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50 w-full bg-white">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <div className="inline-flex items-center space-x-2">
           <span className="bg-black rounded-full">
             <BiCodeAlt className="text-white p-1" size={30} />
@@ -58,7 +58,7 @@ const Navbar = () => {
                   to={item.href}
                   smooth={true}
                   duration={500}
-                  className="text-sm font-semibold text-gray-800 hover:text-gray-900 cursor-pointer"
+                  className="text-sm font-semibold text-gray-800 hover:text-white cursor-pointer hover:bg-black px-2 hover:rounded-full hover:py-[0.3rem]"
                 >
                   {item.name}
                 </Link>
@@ -94,7 +94,7 @@ const Navbar = () => {
                     <button
                       type="button"
                       onClick={toggleMenu}
-                      className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                      className="inline-flex items-center justify-center rounded-md p-2 text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                     >
                       <span className="sr-only">Close menu</span>
                       <X className="h-6 w-6" aria-hidden="true" />
