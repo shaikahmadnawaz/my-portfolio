@@ -36,39 +36,59 @@ const menuItems = [
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [hoveredNavItem, setHoveredNavItem] = React.useState(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 w-full bg-white">
+    <div className="fixed top-0 left-0 right-0 z-50 w-full bg-white backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-200">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <div className="inline-flex items-center space-x-2">
+        <Link
+          activeClass="active"
+          to="#home"
+          spy={true}
+          smooth={true}
+          offset={-20}
+          duration={500}
+          className="inline-flex items-center space-x-2 cursor-pointer"
+        >
           <span className="bg-black rounded-full">
             <BiCodeAlt className="text-white p-1" size={30} />
           </span>
           <span className="font-bold">Nawaz</span>
-        </div>
+        </Link>
         <div className="hidden lg:block">
           <ul className="inline-flex space-x-8">
             {menuItems.map((item) => (
-              <li key={item.name}>
+              <li
+                key={item.name}
+                onMouseEnter={() => setHoveredNavItem(item.name)}
+                onMouseLeave={() => setHoveredNavItem(null)}
+                className="relative cursor-pointer font-[500] text-[18px] text-black"
+              >
                 <Link
+                  activeClass="active"
                   to={item.href}
+                  spy={true}
                   smooth={true}
+                  offset={-20}
                   duration={500}
-                  className="text-sm font-semibold text-gray-800 hover:text-white cursor-pointer hover:bg-black px-2 hover:rounded-full hover:py-[0.3rem]"
+                  className="text-sm font-semibold text-black cursor-pointer px-2"
                 >
                   {item.name}
                 </Link>
+                {hoveredNavItem === item.name && (
+                  <div className="absolute bottom-[-3px] left-0 w-full h-1 bg-black rounded-t-lg" />
+                )}
               </li>
             ))}
           </ul>
         </div>
         <div className="hidden lg:block">
           <a
-            className="rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+            className="rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
             href="https://drive.google.com/drive/folders/1A6pzD7WIt99v-vbEtiJ7Iul3KuqSvTDv?usp=share_link"
             target="_blank"
             rel="noreferrer"
@@ -80,8 +100,8 @@ const Navbar = () => {
           <Menu onClick={toggleMenu} className="h-6 w-6 cursor-pointer" />
         </div>
         {isMenuOpen && (
-          <div className="absolute inset-x-0 top-0 z-50 origin-top-right transform p-2  transition lg:hidden">
-            <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+          <div className="absolute inset-x-0 top-0 z-50 origin-top-right transform p-2 transition lg:hidden">
+            <div className="divide-y-2 divide-white rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
               <div className="px-5 pb-6 pt-5">
                 <div className="flex items-center justify-between">
                   <div className="inline-flex items-center space-x-2">
@@ -109,9 +129,9 @@ const Navbar = () => {
                         to={item.href}
                         smooth={true}
                         duration={500}
-                        className="-m-3 flex items-center rounded-md p-3 text-sm font-semibold hover:bg-gray-50 cursor-pointer"
+                        className="-m-3 flex items-center rounded-md p-3 text-sm font-semibold cursor-pointer"
                       >
-                        <span className="ml-3 text-base font-medium text-gray-900">
+                        <span className="ml-3 text-base font-medium text-black">
                           {item.name}
                         </span>
                       </Link>
@@ -119,7 +139,7 @@ const Navbar = () => {
                   </nav>
                 </div>
                 <a
-                  className="mt-4 w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                  className="mt-4 w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                   href="https://drive.google.com/drive/folders/1A6pzD7WIt99v-vbEtiJ7Iul3KuqSvTDv?usp=share_link"
                   target="_blank"
                   rel="noreferrer"
