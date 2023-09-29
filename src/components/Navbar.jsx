@@ -43,8 +43,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 w-full bg-white backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-200">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+    <div className="mx-auto fixed top-0 left-0 right-0 z-50 max-w-7xl w-full bg-white backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-200">
+      <div className="flex items-center justify-between px-4 py-4">
         <Link
           activeClass="active"
           to="#home"
