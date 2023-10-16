@@ -2,6 +2,21 @@ import { ArrowUpRight } from "lucide-react";
 
 const projects = [
   {
+    title: "Vaaradhi Portal",
+    imageUrl: "vaaradhi.png",
+    description:
+      "Saved 20 hours weekly by developing Vaaradhi Portal (MERN) for an NGO. Streamlined data entry and paperwork for donors, caretakers, and students.",
+    tags: [
+      "#React",
+      "#Tailwind CSS",
+      "#Node.js",
+      "#Express.js",
+      "#MongoDB",
+      "#GCP",
+    ],
+    url: "https://wayvaaradhi.org",
+  },
+  {
     title: "Book Talks",
     imageUrl: "booktalks.png",
     description:
@@ -13,10 +28,23 @@ const projects = [
       "#Express.js",
       "#MongoDB",
       "#AWS S3",
-      "#REST API",
-      "#JWT",
     ],
     url: "https://github.com/shaikahmadnawaz/book-talks",
+  },
+  {
+    title: "Real-time Code Editor",
+    imageUrl: "code-editor.png",
+    description:
+      "Developed a real-time code editor using React, Node.js, and Express.js. Implemented Web Sockets using socket.io for real-time collaboration, Added feature for creating rooms for multiple users to work on the same code simultaneously.",
+    tags: [
+      "#React",
+      "#Node.js",
+      "#Express.js",
+      "#Socket.IO",
+      "#GitHub",
+      "#Heroku",
+    ],
+    url: "https://github.com/shaikahmadnawaz/realtime-code-editor",
   },
   {
     title: "Workout Tracker",
@@ -38,38 +66,16 @@ const projects = [
     title: "VConnect Globe",
     imageUrl: "vconnectglobe.png",
     description:
-      "Built a study abroad mentorship web application using React and Tailwind CSS, implementing responsive design. The client praised my technical and professional abilities and provided a glowing recommendation for future clients.",
+      "Developed a fully responsive landing page for Vconnectglobe, a startup specializing in 1‑2‑1 mentorship for students aspiring to study in foreign universities.",
     tags: ["#React", "#Tailwind CSS", "#GitHub", "#Hostinger"],
     url: "https://github.com/shaikahmadnawaz/vconnectglobe",
   },
-  {
-    title: "Real-time Code Editor",
-    imageUrl: "code-editor.png",
-    description:
-      "Developed a real-time code editor using React, Node.js, and Express.js. Implemented Web Sockets using socket.io for real-time collaboration, Added feature for creating rooms for multiple users to work on the same code simultaneously.",
-    tags: [
-      "#React",
-      "#Node.js",
-      "#Express.js",
-      "#Socket.IO",
-      "#GitHub",
-      "#Heroku",
-    ],
-    url: "https://github.com/shaikahmadnawaz/realtime-code-editor",
-  },
-  {
-    title: "Weather App",
-    imageUrl: "react-weather-app.png",
-    description:
-      "Built a weather application using ReactJS and the OpenWeatherMap API. Implemented API calls using Axios to retrieve weather information and update the user interface in real-time.",
-    tags: ["#React", "#OpenWeatherMap API", "#Git", "#GitHub", "#Vercel"],
-    url: "https://github.com/shaikahmadnawaz/vconnectglobe",
-  },
+
   {
     title: "My Portfolio",
     imageUrl: "my-portfolio.png",
     description:
-      "Developed my personal portfolio website using ReactJS and Tailwind CSS. Showcased my projects, skills, and experience. Implemented responsive design and optimized performance for a seamless user experience.",
+      "Developed my personal portfolio website using ReactJS and Tailwind CSS. Showcased my projects, skills, and experience, Implemented responsive design.",
     tags: [
       "#React",
       "#Tailwind CSS",
