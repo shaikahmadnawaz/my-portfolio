@@ -20,10 +20,10 @@ const menuItems = [
     name: "Experience",
     href: "#experience",
   },
-  {
-    name: "Blogs",
-    href: "#blogs",
-  },
+  // {
+  //   name: "Blogs",
+  //   href: "#blogs",
+  // },
   {
     name: "Skills",
     href: "#skills",
