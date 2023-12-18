@@ -17,9 +17,8 @@ const Hero = () => {
           </h1>
 
           <p className="mt-8 text-lg text-gray-700">
-            I am a passionate developer with expertise in front-end and back-end
-            technologies. I love building engaging and user-friendly digital
-            experiences.
+            I am a passionate fullstack developer. I love building engaging and
+            user-friendly digital experiences.
           </p>
 
           <div className="mt-8 flex space-x-4">
