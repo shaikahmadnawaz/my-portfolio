@@ -69,7 +69,7 @@ const Blogs = () => {
                     href={`https://shaikahmadnawaz.hashnode.dev/${blog.slug}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-4 w-full rounded-sm bg-black text-sm font-semibold text-white px-2 py-1.5 shadow-sm  focus:outline-none focus-visible:ring-2 focus-visible:ring-black"
+                    className="mt-4 w-full rounded-sm bg-black text-sm font-semibold text-white px-2 py-1.5 shadow-sm  focus:outline-none focus-visible:ring-2 focus-visible:ring-black hover:underline"
                   >
                     Read Article{" "}
                     <ArrowUpRight className="inline-block ml-1" size={12} />

@@ -145,7 +145,7 @@ function Projects() {
                 </div>
                 <div className="flex justify-between items-center">
                   <a
-                    className="w-[120px] rounded-sm text-center bg-black text-xs font-semibold text-white px-2 py-1.5 shadow-sm  focus:outline-none focus:ring-2 focus:ring-black"
+                    className="w-[120px] rounded-sm text-center bg-black text-xs font-semibold text-white px-2 py-1.5 shadow-sm  focus:outline-none focus:ring-2 focus:ring-black hover:underline"
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -154,7 +154,7 @@ function Projects() {
                     <Link className="inline-block ml-1" size={12} />
                   </a>
                   <a
-                    className="w-[120px] rounded-sm text-center bg-black text-xs font-semibold text-white px-2 py-1.5 shadow-sm  focus:outline-none focus:ring-2 focus:ring-black"
+                    className="w-[120px] rounded-sm text-center bg-black text-xs font-semibold text-white px-2 py-1.5 shadow-sm  focus:outline-none focus:ring-2 focus:ring-black hover:underline"
                     href={project.codeUrl}
                     target="_blank"
                     rel="noopener noreferrer"

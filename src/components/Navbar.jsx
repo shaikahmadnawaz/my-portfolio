@@ -1,5 +1,5 @@
 import React from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, HeartHandshake } from "lucide-react";
 import { Link } from "react-scroll";
 import { BiCodeAlt } from "react-icons/bi";
 
@@ -36,7 +36,7 @@ const menuItems = [
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const [hoveredNavItem, setHoveredNavItem] = React.useState(null);
+  // const [hoveredNavItem, setHoveredNavItem] = React.useState(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -52,20 +52,20 @@ const Navbar = () => {
           smooth={true}
           offset={-20}
           duration={500}
-          className="inline-flex items-center space-x-2 cursor-pointer"
+          className="inline-flex items-center space-x-2 cursor-pointer hover:underline"
         >
           <span className="bg-black rounded-full">
             <BiCodeAlt className="text-white p-1" size={30} />
           </span>
-          <span className="font-bold">Nawaz</span>
+          <span className="font-bold ">Nawaz</span>
         </Link>
         <div className="hidden lg:block">
           <ul className="inline-flex space-x-5">
             {menuItems.map((item) => (
               <li
                 key={item.name}
-                onMouseEnter={() => setHoveredNavItem(item.name)}
-                onMouseLeave={() => setHoveredNavItem(null)}
+                // onMouseEnter={() => setHoveredNavItem(item.name)}
+                // onMouseLeave={() => setHoveredNavItem(null)}
                 className="relative cursor-pointer font-[500] text-[18px] text-black"
               >
                 <Link
@@ -75,25 +75,26 @@ const Navbar = () => {
                   smooth={true}
                   offset={-20}
                   duration={500}
-                  className="text-sm font-semibold text-black cursor-pointer px-2"
+                  className="text-sm hover:underline font-semibold text-black cursor-pointer px-2"
                 >
                   {item.name}
                 </Link>
-                {hoveredNavItem === item.name && (
+                {/* {hoveredNavItem === item.name && (
                   <div className="absolute bottom-[-3px] left-0 w-full h-1 bg-black rounded-t-lg" />
-                )}
+                )} */}
               </li>
             ))}
           </ul>
         </div>
-        <div className="hidden lg:block">
+        <div className="hidden lg:block hover:underline">
           <a
-            className="rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+            className="rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
             href="https://drive.google.com/drive/folders/1A6pzD7WIt99v-vbEtiJ7Iul3KuqSvTDv?usp=share_link"
             target="_blank"
             rel="noreferrer"
           >
             Hire Me
+            <HeartHandshake className="inline-block ml-1" size={12} />
           </a>
         </div>
         <div className="lg:hidden">
@@ -145,6 +146,7 @@ const Navbar = () => {
                   rel="noreferrer"
                 >
                   Hire Me
+                  <HeartHandshake className="inline-block ml-1" size={12} />
                 </a>
               </div>
             </div>
