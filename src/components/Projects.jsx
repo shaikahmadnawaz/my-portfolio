@@ -60,7 +60,7 @@ const projects = [
       "#Express.js",
       "#Socket.IO",
       "#GitHub",
-      "#Heroku",
+      "#Render",
     ],
     liveUrl: "https://realtime-sync-code-editor.vercel.app",
     codeUrl: "https://github.com/shaikahmadnawaz/realtime-code-editor",

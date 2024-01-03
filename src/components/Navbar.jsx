@@ -21,12 +21,12 @@ const menuItems = [
     href: "#projects",
   },
   {
-    name: "Blogs",
-    href: "#blogs",
-  },
-  {
     name: "Skills",
     href: "#skills",
+  },
+  {
+    name: "Blogs",
+    href: "#blogs",
   },
   {
     name: "Contact",
