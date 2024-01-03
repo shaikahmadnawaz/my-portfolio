@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
 
@@ -26,14 +26,12 @@ const Contact = () => {
         }
       );
 
-      // Handle the response
       if (response.data.success) {
         toast.success("Message sent to Nawaz!", {
           duration: 1000,
         });
-        // Display a success message or perform any desired action
+
         console.log("Message sent successfully!");
-        // Clear the input fields
         setName("");
         setEmail("");
         setMessage("");
@@ -41,15 +39,11 @@ const Contact = () => {
         toast.error("Error sending message", {
           duration: 1000,
         });
-        // Display an error message or handle the error
-        console.log("Error sending message");
       }
     } catch (error) {
       toast.error("Error sending message", {
         duration: 1000,
       });
-      // Display an error message or handle the error
-      console.error("Error sending message:", error);
     }
   };
   return (
@@ -65,24 +59,25 @@ const Contact = () => {
         <div className="lg:w-1/2 md:pl-8">
           <h1 className="text-3xl font-bold mb-4">Contact Me</h1>
           <p className="text-lg mb-8">
-            If you'd like to get in touch with me, feel free to reach out using
-            the contact information below or by filling out the contact form.
+            If you&apos;d like to get in touch with me, feel free to reach out
+            using the contact information below or by filling out the contact
+            form.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <h2 className="text-xl font-semibold mb-2">Email</h2>
-              <p className="text-gray-600">shaikahmadnawaz@gmail.com</p>
+              <p className="text-black">shaikahmadnawaz@gmail.com</p>
             </div>
             <div>
               <h2 className="text-xl font-semibold mb-2">Phone</h2>
-              <p className="text-gray-600">+91 95029 90520</p>
+              <p className="text-black">+91 95029 90520</p>
             </div>
           </div>
           <form className="mt-8" onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label
-                  className="block text-sm font-medium text-gray-700 mb-1"
+                  className="block text-sm font-medium text-black mb-1"
                   htmlFor="name"
                 >
                   Name
@@ -94,13 +89,13 @@ const Contact = () => {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
-                  className="w-full border-black border-2 rounded-md focus:ring-2 focus:ring-slate-700 focus:border-slate-700 p-2"
+                  className="w-full border-black border-2 rounded-md focus:ring-2 focus:ring-black focus:border-black p-2"
                   placeholder="Your Name"
                 />
               </div>
               <div>
                 <label
-                  className="block text-sm font-medium text-gray-700 mb-1"
+                  className="block text-sm font-medium text-black mb-1"
                   htmlFor="email"
                 >
                   Email
@@ -113,14 +108,14 @@ const Contact = () => {
                   onChange={(e) => setEmail(e.target.value)}
                   required
                   pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
-                  className="w-full border-black border-2 rounded-md focus:ring-2 focus:ring-slate-700 focus:border-slate-700 p-2"
+                  className="w-full border-black border-2 rounded-md focus:ring-2 focus:ring-slate focus:border-black p-2"
                   placeholder="Your Email"
                 />
               </div>
             </div>
             <div className="mt-6">
               <label
-                className="block text-sm font-medium text-gray-700 mb-1"
+                className="block text-sm font-medium text-black mb-1"
                 htmlFor="message"
               >
                 Message
@@ -132,14 +127,14 @@ const Contact = () => {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 required
-                className="w-full border-black border-2 rounded-md focus:ring-2 focus:ring-slate-700 focus:border-slate-700 p-2"
+                className="w-full border-black border-2 rounded-md focus:ring-2 focus:ring-black focus:border-black p-2"
                 placeholder="Your Message"
               ></textarea>
             </div>
             <div className="mt-6">
               <button
                 type="submit"
-                className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-black hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-700"
+                className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-black hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
               >
                 Send Message
               </button>
