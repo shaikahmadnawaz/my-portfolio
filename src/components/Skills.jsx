@@ -1,4 +1,3 @@
-import React from "react";
 import { DiReact, DiNodejs, DiDocker } from "react-icons/di";
 
 const Skills = () => {
