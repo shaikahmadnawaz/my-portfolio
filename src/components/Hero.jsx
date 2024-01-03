@@ -14,10 +14,12 @@ const Hero = () => {
           </p>
 
           <p className="mt-8 text-md lg:text-lg text-black text-justify">
-            Welcome to my digital world! I&apos;m on a mission to craft
-            captivating and intuitive digital experiences. As a passionate
-            fullstack developer, I blend cutting-edge technology with creativity
-            to bring ideas to life.
+            Welcome to my digital world! I&apos;m on a mission to craft{" "}
+            <span className="font-bold">captivating</span> and{" "}
+            <span className="font-bold">intuitive</span> digital experiences. As
+            a passionate <span className="font-bold">fullstack developer</span>,
+            I blend cutting-edge technology with creativity to bring ideas to
+            life.
           </p>
 
           <div className="mt-8 flex space-x-4">
