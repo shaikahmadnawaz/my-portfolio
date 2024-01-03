@@ -13,12 +13,12 @@ const menuItems = [
     href: "#about",
   },
   {
-    name: "Projects",
-    href: "#projects",
-  },
-  {
     name: "Experience",
     href: "#experience",
+  },
+  {
+    name: "Projects",
+    href: "#projects",
   },
   {
     name: "Blogs",
@@ -60,7 +60,7 @@ const Navbar = () => {
           <span className="font-bold">Nawaz</span>
         </Link>
         <div className="hidden lg:block">
-          <ul className="inline-flex space-x-8">
+          <ul className="inline-flex space-x-5">
             {menuItems.map((item) => (
               <li
                 key={item.name}
