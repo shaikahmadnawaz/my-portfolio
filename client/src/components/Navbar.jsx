@@ -52,7 +52,7 @@ const Navbar = () => {
           smooth={true}
           offset={-20}
           duration={500}
-          className="inline-flex items-center space-x-2 cursor-pointer hover:underline"
+          className="inline-flex items-center space-x-2 cursor-pointer"
         >
           <span className="bg-black rounded-full">
             <BiCodeAlt className="text-white p-1" size={30} />

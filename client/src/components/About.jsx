@@ -25,7 +25,7 @@ const About = () => {
               </p>
               <p className="text-lg mb-4 text-justify">
                 My work includes{" "}
-                <span className="font-semibold">e-commerce platforms</span>,{" "}
+                <span className="font-semibold">ecommerce platforms</span>,{" "}
                 <span className="font-semibold">social networking sites</span>,
                 and more. I create{" "}
                 <span className="font-semibold">scalable solutions</span> that
@@ -36,7 +36,7 @@ const About = () => {
               <p className="text-lg text-justify">
                 Currently, I&apos;m working as an{" "}
                 <span className="font-semibold">
-                  Associate Software Engineer
+                  Associate Software Developer
                 </span>{" "}
                 at{" "}
                 <span className="font-semibold">

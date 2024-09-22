@@ -10,16 +10,16 @@ const Hero = () => {
             <span className="inline-block text-black font-bold">Nawaz</span>
           </h1>
           <p className="mt-2 lg:mt-3 text-xl text-black lg:text-3xl tracking-tight">
-            a creative <span className="font-[500]">Fullstack Developer</span>.
+            a creative <span className="font-[500]">Full Stack Developer</span>.
           </p>
 
           <p className="mt-8 text-md lg:text-lg text-black text-justify">
             Welcome to my digital world! I&apos;m here to create{" "}
             <span className="font-semibold">engaging</span> and{" "}
-            <span className="font-semibold">easy-to-use</span> digital
+            <span className="font-semibold">easy to use</span> digital
             experiences. As a{" "}
-            <span className="font-semibold">fullstack developer</span> who loves
-            both technology and creativity, I turn ideas into reality.
+            <span className="font-semibold">full stack developer</span> who
+            loves both technology and creativity, I turn ideas into reality.
           </p>
 
           <div className="mt-8 flex space-x-4">

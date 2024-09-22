@@ -1,26 +1,4 @@
 function Experience() {
-  const experiences = [
-    {
-      title: "Full Stack Development Intern",
-      company: "Atoms Digital Solutions",
-      logo: "./atoms.jpg",
-      duration: "Mar 2023 - Sep 2023",
-      description: `Played a key role in developing three comprehensive websites for the Atoms Group and its affiliated wings.
-      Utilized MERN stack and AWS technologies. Successfully established a digital presence, contributing to a 20% growth in online visibility.
-      Implemented features that facilitated the acquisition of new clients, resulting in a 15% increase in client engagement.`,
-    },
-
-    {
-      title: "Open Source Contributor",
-      company: "Time Chain Labs, Node.js, Dart, BioDrop, and more",
-      logo: "./open-source.webp",
-      duration: "Apr 2023 - Present",
-      description: `Contributed to Bitcoin Token Standards project as part of Timechain Labs.
-      Contributed to Dart docs.
-      Contributed to Node.js website, BioDrop, and SeamlessUI projects.`,
-    },
-  ];
-
   return (
     <div id="#experience" className="relative w-full py-10 bg-white">
       <div className="mx-auto max-w-7xl px-8">
@@ -28,47 +6,126 @@ function Experience() {
         <p className="text-lg text-black mb-8 md:text-center">
           Check out my professional experience below.
         </p>
-        <div className="grid gap-6 grid-cols-1 lg:grid-cols-2">
-          {experiences.map((experience, index) => (
-            <div
-              key={index}
-              className="flex max-w-2xl flex-col items-center rounded-md border md:flex-row shadow-sm"
-            >
-              <div className="h-full w-full md:h-[200px] md:w-[400px] p-2">
-                <img
-                  src={experience.logo}
-                  alt="company logo"
-                  className="h-full w-full rounded-md object-cover"
-                />
-              </div>
-              <div>
-                <div className="p-4">
-                  <h2 className="inline-flex items-center text-lg font-semibold">
-                    {experience.title}
-                  </h2>
-                  <div className="mt-3 flex items-center space-x-2">
-                    <span className="flex flex-col">
-                      <span className="text-[10px] font-medium text-black">
-                        {experience.company}
-                      </span>
-                      <span className="text-[8px] font-medium text-black">
-                        {experience.duration}
-                      </span>
+
+        <div className="grid grid-cols-2 h-full w-full gap-6 items-center justify-center">
+          {" "}
+          <div className="flex max-w-2xl h-full flex-col items-center rounded-md border md:flex-row shadow-sm">
+            <div className="h-full md:w-[400px] w-full p-2">
+              <img
+                src="./mybizzerp.svg"
+                alt="Atoms Digital Solutions logo"
+                className="h-full w-full rounded-md object-cover"
+              />
+            </div>
+            <div>
+              <div className="p-4">
+                <h2 className="inline-flex items-center text-lg font-semibold">
+                  Associate Software Developer
+                </h2>
+                <div className="mt-2 flex items-center space-x-2">
+                  <span className="flex flex-col">
+                    <span className="text-[10px] font-medium text-black">
+                      Drag and Drop India Private Limited
                     </span>
-                  </div>
-                  <div className="mt-3 text-sm text-black text-justify">
-                    <ul className="list-disc pl-5">
-                      {experience.description
-                        .split("\n")
-                        .map((point, index) => (
-                          <li key={index}>{point}</li>
-                        ))}
-                    </ul>
-                  </div>
+                    {/* Utility to calculate itself */}
+                    <span className="text-[8px] font-medium text-black">
+                      Apr 2024 - Present
+                    </span>
+                  </span>
+                </div>
+                <div className="mt-2 text-sm text-black text-justify">
+                  <p>
+                    Developed the landing page for{" "}
+                    <span className="font-semibold">MyBizz ERP</span> using{" "}
+                    <span className="font-semibold">React</span>, improving load
+                    speed by <span className="font-semibold">15%</span>.
+                    I&apos;m currently building{" "}
+                    <span className="font-semibold">Sathvar</span>, a service
+                    based marketplace with{" "}
+                    <span className="font-semibold">Next.js</span>.
+                  </p>
                 </div>
               </div>
             </div>
-          ))}
+          </div>
+          {/* First Experience */}
+          <div className="flex max-w-2xl h-full flex-col items-center rounded-md border md:flex-row shadow-sm">
+            <div className="h-full md:w-[400px] w-full p-2">
+              <img
+                src="./atoms.jpg"
+                alt="Atoms Digital Solutions logo"
+                className="h-full w-full rounded-md object-cover"
+              />
+            </div>
+            <div>
+              <div className="p-4">
+                <h2 className="inline-flex items-center text-lg font-semibold">
+                  Full Stack Development Intern
+                </h2>
+                <div className="mt-2 flex items-center space-x-2">
+                  <span className="flex flex-col">
+                    <span className="text-[10px] font-medium text-black">
+                      Atoms Digital Solutions
+                    </span>
+                    <span className="text-[8px] font-medium text-black">
+                      Mar 2023 - Sep 2023
+                    </span>
+                  </span>
+                </div>
+                <div className="mt-2 text-sm text-black text-justify">
+                  <p>
+                    Developed three websites using the{" "}
+                    <span className="font-semibold">MERN stack</span> and{" "}
+                    <span className="font-semibold">AWS</span>, helping Atoms
+                    Group improve their{" "}
+                    <span className="font-semibold">
+                      online visibility by 20%
+                    </span>{" "}
+                    and achieve a{" "}
+                    <span className="font-semibold">
+                      15% increase in client engagement
+                    </span>
+                    .
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Second Experience */}
+          <div className="flex max-w-2xl h-full flex-col items-center rounded-md border md:flex-row shadow-sm">
+            <div className="h-full w-full md:w-[400px] p-2">
+              <img
+                src="./open-source.webp"
+                alt="Open Source Contributor logo"
+                className="h-full w-full rounded-md object-cover"
+              />
+            </div>
+            <div>
+              <div className="p-4">
+                <h2 className="inline-flex items-center text-lg font-semibold">
+                  Open Source Contributor
+                </h2>
+                <div className="mt-2 flex items-center space-x-2">
+                  <span className="flex flex-col">
+                    <span className="text-[10px] font-medium text-black">
+                      Time Chain Labs, Node.js, Dart, BioDrop, and more
+                    </span>
+                    <span className="text-[8px] font-medium text-black">
+                      Apr 2023 - Present
+                    </span>
+                  </span>
+                </div>
+                <div className="mt-2 text-sm text-black text-justify">
+                  <p>
+                    Contributed to the <strong>Bitcoin Token Standards</strong>{" "}
+                    at Time Chain Labs, as well as key projects like{" "}
+                    <strong>Node.js</strong>, <strong>Dart docs</strong>,{" "}
+                    <strong>BioDrop</strong>, and <strong>SeamlessUI</strong>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
