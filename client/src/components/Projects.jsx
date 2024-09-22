@@ -2,6 +2,24 @@ import { Github, Link } from "lucide-react";
 
 const projects = [
   {
+    title: "Learn Space",
+    imagecodeUrl: "learnspace.png",
+    description:
+      "Developed a cloud-native application for collaborative learning using the MERN stack and AWS. LearnSpace offers coding environments, project repositories, and academic resources.",
+    tags: [
+      "#React.js",
+      "#Node.js",
+      "#Express.js",
+      "#MongoDB",
+      "#Tailwind CSS",
+      "#AWS",
+      "#Cloud Native",
+      "#CI/CD",
+    ],
+    liveUrl: "https://vvit-learnspace.vercel.app",
+    codeUrl: "https://github.com/TechXcel/VVIT-LearnSpace",
+  },
+  {
     title: "Vaaradhi Portal",
     imagecodeUrl: "vaaradhi.png",
     description:
