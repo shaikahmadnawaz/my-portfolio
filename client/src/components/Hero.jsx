@@ -10,16 +10,15 @@ const Hero = () => {
             <span className="inline-block text-black font-bold">Nawaz</span>
           </h1>
           <p className="mt-2 lg:mt-3 text-xl text-black lg:text-3xl tracking-tight">
-            - a Creative Fullstack Developer
+            a creative <span className="font-[500]">Fullstack Developer</span>.
           </p>
 
           <p className="mt-8 text-md lg:text-lg text-black text-justify">
-            Welcome to my digital world! I&apos;m on a mission to craft{" "}
-            <span className="font-bold">captivating</span> and{" "}
-            <span className="font-bold">intuitive</span> digital experiences. As
-            a passionate <span className="font-bold">fullstack developer</span>,
-            I blend cutting-edge technology with creativity to bring ideas to
-            life.
+            Welcome to my digital world! I&apos;m here to create{" "}
+            <span className="font-bold">engaging</span> and{" "}
+            <span className="font-bold">easy-to-use</span> digital experiences.
+            As a <span className="font-bold">fullstack developer</span> who
+            loves both technology and creativity, I turn ideas into reality.
           </p>
 
           <div className="mt-8 flex space-x-4">
@@ -39,7 +38,7 @@ const Hero = () => {
             </a>
 
             <a
-              href="https://twitter.com/shaikahmadnawaz"
+              href="https://x.com/shaikahmadnawaz"
               target="_blank"
               rel="noopener noreferrer"
             >
