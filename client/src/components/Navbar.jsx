@@ -1,5 +1,5 @@
 import React from "react";
-import { Menu, X, HeartHandshake } from "lucide-react";
+import { Menu, X, BriefcaseBusiness } from "lucide-react";
 import { Link } from "react-scroll";
 import { BiCodeAlt } from "react-icons/bi";
 
@@ -7,6 +7,10 @@ const menuItems = [
   {
     name: "Home",
     href: "#home",
+  },
+  {
+    name: "Blogs",
+    href: "https://shaikahmadnawaz.hashnode.dev",
   },
   {
     name: "About",
@@ -23,10 +27,6 @@ const menuItems = [
   {
     name: "Skills",
     href: "#skills",
-  },
-  {
-    name: "Blogs",
-    href: "#blogs",
   },
   {
     name: "Contact",
@@ -68,17 +68,30 @@ const Navbar = () => {
                 // onMouseLeave={() => setHoveredNavItem(null)}
                 className="relative cursor-pointer font-[500] text-[18px] text-black"
               >
-                <Link
-                  activeClass="active"
-                  to={item.href}
-                  spy={true}
-                  smooth={true}
-                  offset={-20}
-                  duration={500}
-                  className="text-sm hover:underline font-semibold text-black cursor-pointer px-2"
-                >
-                  {item.name}
-                </Link>
+                {item.name === "Blogs" ? (
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    offset={-20}
+                    className="text-sm hover:underline font-semibold text-black cursor-pointer px-2"
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <Link
+                    activeClass="active"
+                    to={item.href}
+                    spy={true}
+                    smooth={true}
+                    offset={-20}
+                    duration={500}
+                    className="text-sm hover:underline font-semibold text-black cursor-pointer px-2"
+                  >
+                    {item.name}
+                  </Link>
+                )}
+
                 {/* {hoveredNavItem === item.name && (
                   <div className="absolute bottom-[-3px] left-0 w-full h-1 bg-black rounded-t-lg" />
                 )} */}
@@ -93,8 +106,8 @@ const Navbar = () => {
             target="_blank"
             rel="noreferrer"
           >
-            Hire Me
-            <HeartHandshake className="inline-block ml-1" size={12} />
+            Resume
+            <BriefcaseBusiness className="inline-block ml-1" size={12} />
           </a>
         </div>
         <div className="lg:hidden">
@@ -145,8 +158,8 @@ const Navbar = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Hire Me
-                  <HeartHandshake className="inline-block ml-1" size={12} />
+                  Resume
+                  <BriefcaseBusiness className="inline-block ml-1" size={12} />
                 </a>
               </div>
             </div>

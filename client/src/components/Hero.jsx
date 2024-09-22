@@ -1,4 +1,4 @@
-import { Github, Instagram, Linkedin, Twitter } from "lucide-react";
+import { FaXTwitter, FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa6";
 
 const Hero = () => {
   return (
@@ -28,14 +28,14 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Github className="text-black" size={30} />
+              <FaGithub className="text-black" size={30} />
             </a>
             <a
               href="https://www.linkedin.com/in/shaikahmadnawaz"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Linkedin className="text-black" size={30} />
+              <FaLinkedin className="text-black" size={30} />
             </a>
 
             <a
@@ -43,14 +43,14 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Twitter className="text-black" size={30} />
+              <FaXTwitter className="text-black" size={30} />
             </a>
             <a
               href="https://www.instagram.com/shaikahmadnawaz"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Instagram className="text-black" size={30} />
+              <FaInstagram className="text-black" size={30} />
             </a>
           </div>
         </div>

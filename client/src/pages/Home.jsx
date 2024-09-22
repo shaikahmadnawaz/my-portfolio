@@ -10,7 +10,7 @@ import Blogs from "../components/Blogs";
 
 const Home = () => {
   return (
-    <main className="">
+    <main>
       <Navbar />
       <Hero />
       <About />
