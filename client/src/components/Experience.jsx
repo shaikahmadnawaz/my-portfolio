@@ -7,7 +7,7 @@ function Experience() {
           Check out my professional experience below.
         </p>
 
-        <div className="grid grid-cols-2 h-full w-full gap-6 items-center justify-center">
+        <div className="grid lg:grid-cols-2 h-full w-full gap-6 items-center justify-center">
           {" "}
           <div className="flex max-w-2xl h-full flex-col items-center rounded-md border md:flex-row shadow-sm">
             <div className="h-full md:w-[400px] w-full p-2">

@@ -23,8 +23,7 @@ const Skills = () => {
               <li>Next.js</li>
               <li>Redux Toolkit</li>
               <li>Tailwind CSS</li>
-              <li>Shadcn/ui</li>
-              <li>Python</li>
+              <li>Zustand</li>
 
               {/* Add more frontend skills */}
             </ul>
@@ -38,13 +37,10 @@ const Skills = () => {
               <li>Node.js</li>
               <li>Express.js</li>
               <li>MongoDB</li>
-              <li>Next.js</li>
               <li>MySQL</li>
               <li>PostgreSQL</li>
-              <li>Prisma</li>
               <li>Mongoose</li>
-              <li>GraphQL</li>
-              <li>FastAPI</li>
+              <li>Drizzle</li>
               {/* Add more backend skills */}
             </ul>
           </div>
@@ -57,7 +53,7 @@ const Skills = () => {
               <li>Linux</li>
               <li>Docker</li>
               <li>AWS</li>
-              <li>GCP</li>
+              <li>Azure</li>
               <li>Kubernetes</li>
               <li>GitHub Actions</li>
               <li>Jenkins</li>
