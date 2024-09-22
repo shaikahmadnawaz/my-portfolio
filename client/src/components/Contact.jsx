@@ -1,13 +1,16 @@
 import { useState } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
+import { Loader2 } from "lucide-react";
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
+    setLoading(true);
     e.preventDefault();
 
     if (!e.target.checkValidity()) {
@@ -18,7 +21,7 @@ const Contact = () => {
     try {
       // Make a POST request to the backend endpoint
       const response = await axios.post(
-        "https://shaikahmadnawaz.cyclic.app/api/contact",
+        `${import.meta.env.VITE_BACKEND_HOST}/api/v1/contact`,
         {
           name,
           email,
@@ -26,26 +29,21 @@ const Contact = () => {
         }
       );
 
-      if (response.data.success) {
-        toast.success("Message sent to Nawaz!", {
-          duration: 1000,
-        });
+      if (response.status === 200) {
+        setLoading(false);
+        toast.success("Message sent to Nawaz!", {});
 
         console.log("Message sent successfully!");
         setName("");
         setEmail("");
         setMessage("");
-      } else {
-        toast.error("Error sending message", {
-          duration: 1000,
-        });
       }
     } catch (error) {
-      toast.error("Error sending message", {
-        duration: 1000,
-      });
+      setLoading(false);
+      toast.error("Error sending message");
     }
   };
+
   return (
     <div id="#contact" className="relative bg-white py-10">
       <div className="max-w-7xl mx-auto px-8 flex flex-col lg:flex-row">
@@ -136,7 +134,14 @@ const Contact = () => {
                 type="submit"
                 className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-black hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
               >
-                Send Message
+                {loading ? (
+                  <>
+                    Sending{" "}
+                    <Loader2 className="w-4 h-4 ml-2 font-semibold animate-spin" />
+                  </>
+                ) : (
+                  <>Send Message</>
+                )}
               </button>
             </div>
           </form>
