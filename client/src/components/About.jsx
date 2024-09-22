@@ -14,45 +14,41 @@ const About = () => {
             <div className="px-4 py-8 md:py-10 lg:py-12">
               <h2 className="text-3xl font-bold mb-4">About Me</h2>
               <p className="text-lg mb-4 text-justify">
-                Greetings! I&apos;m <span className="font-bold">Nawaz</span>, a
-                results-driven{" "}
-                <span className="font-bold">Full Stack Web Developer</span>{" "}
-                specializing in the dynamic{" "}
-                <span className="font-bold">Next.js</span> and{" "}
-                <span className="font-bold">MERN stack</span>. My journey
-                involves a deep passion for crafting web applications that not
-                only deliver{" "}
-                <span className="font-bold">seamless user experiences</span> but
-                also address{" "}
-                <span className="font-bold">real-world challenges</span>.
+                Hello, I&apos;m <span className="font-semibold">Nawaz</span>, a{" "}
+                <span className="font-semibold">Full Stack Web Developer</span>{" "}
+                focused on <span className="font-semibold">MERN</span> and{" "}
+                <span className="font-semibold">Next.js</span>. I love building
+                web apps that provide{" "}
+                <span className="font-semibold">great user experiences</span>{" "}
+                and solve{" "}
+                <span className="font-semibold">real world problems</span>.
               </p>
               <p className="text-lg mb-4 text-justify">
-                My portfolio boasts a diverse range of web applications,
-                spanning from innovative{" "}
-                <span className="font-bold">e-commerce platforms</span> to
-                engaging{" "}
-                <span className="font-bold">social networking sites</span>. I
-                pride myself on creating{" "}
-                <span className="font-bold">
-                  scalable and efficient solutions
-                </span>{" "}
-                that adhere to{" "}
-                <span className="font-bold">industry best practices</span>,
-                ensuring optimal performance and user satisfaction.
+                My work includes{" "}
+                <span className="font-semibold">e-commerce platforms</span>,{" "}
+                <span className="font-semibold">social networking sites</span>,
+                and more. I create{" "}
+                <span className="font-semibold">scalable solutions</span> that
+                follow{" "}
+                <span className="font-semibold">industry best practices</span>{" "}
+                for the best performance and user satisfaction.
               </p>
               <p className="text-lg text-justify">
-                Eager to tackle{" "}
-                <span className="font-bold">new challenges</span>, I am
-                committed to contributing my skills to{" "}
-                <span className="font-bold">innovative projects</span>. Whether
-                it&apos;s enhancing{" "}
-                <span className="font-bold">user interactions</span>, optimizing{" "}
-                <span className="font-bold">performance</span>, or creating{" "}
-                <span className="font-bold">intuitive designs</span>, I&apos;m
-                up for the task. Let&apos;s connect through the social links
-                below or drop me an email. Together, let&apos;s embark on the
-                journey of building something{" "}
-                <span className="font-bold">extraordinary</span>!
+                Currently, I&apos;m working as an{" "}
+                <span className="font-semibold">
+                  Associate Software Engineer
+                </span>{" "}
+                at{" "}
+                <span className="font-semibold">
+                  Drag and Drop India Private Limited
+                </span>
+                . I&apos;m always excited to take on{" "}
+                <span className="font-semibold">new challenges</span> and
+                contribute to{" "}
+                <span className="font-semibold">innovative projects</span>. Feel
+                free to connect with me through social media or email.
+                Let&apos;s build something{" "}
+                <span className="font-semibold">amazing</span> together!
               </p>
             </div>
           </div>
